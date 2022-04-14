@@ -1,4 +1,4 @@
-SELECT users.*, user.age, zipcodes.zipcode, district.name, province.name, subdistrict.name 
+SELECT users.*, users.age, zipcodes.zipcode, district.name, province.name, subdistrict.name 
 FROM users
 JOIN zipcode ON users.zipcode_fk = zipcodes.zipcode
 JOIN district ON zipcodes.district_fk = district.id
